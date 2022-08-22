@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hemen Üye ol</title>
+  </head>
+  <body>
+    <nav style="font-size: 20px">
+      <a href="index.html">Anasayfa</a>
+      <a href="iframe.html">En iyi filmler</a>
+      <a href="form-uygulama.html">Kayıt ol</a>
+    </nav>
+
+    <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+    <hr />
+
+    <div>
+      <h2>Hesap Bilgileriniz</h2>
+      <table>
+        <tr>
+          <td style="width: 120px">
+            <label for="k.adi">Kullanıcı Adı:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <input
+              type="text"
+              id="k.adi"
+              placeholder="Kullancı Adınızı giriniz."
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>
+            <label for="mail">E posta:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <input type="email" id="mail" placeholder="E posta giriniz.." />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>
+            <label for="password">Parola:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              placeholder="şifrenizi giriniz"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h2>kişisel Bilgileriniz</h2>
+      <table>
+        <tr>
+          <td style="width: 120px">
+            <label for="ad">Ad:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <input type="text" id="ad" placeholder="Adınızı giriniz." />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>
+            <label for="soy">Soyad:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <input type="text" id="soy" placeholder="Soyadınızı giriniz." />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>
+            <label for="seh">Şehir:</label>
+          </td>
+          <td style="width: 20px"></td>
+          <td>
+            <select id="seh">
+              <option>Seçiniz</option>
+              <option>Ankara</option>
+              <option>İstanbul</option>
+              <option>Düzce</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cins">Cinsiyet:</label>
+          </td>
+          <td></td>
+          <td>
+            <input type="radio" name="cins" />Erkek
+            <input type="radio" name="cins" />Kadın
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="hobi">hobileriniz</label>
+          </td>
+          <td></td>
+          <td>
+            <input type="checkbox" />Sinema <input type="checkbox" />Gezmek
+            <input type="checkbox" />Kamp yapmak <input type="checkbox" />Spor
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <button type="submit">Kaydet</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
