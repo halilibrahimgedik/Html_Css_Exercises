@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d4a09f6098.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    #showcase {
+      background-image: url("night.jpg");
+      background-size: cover;
+      background-position: center;
+
+      height: 500px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+    .h1 {
+      margin: 50px 20px;
+    }
+    #how-it-works {
+      padding: 10px;
+      text-align: center;
+    }
+    .main-header {
+      background-color: #000000;
+      height: 60px;
+      font-size: 25px;
+      padding-top: 10px;
+    }
+    .main-nav {
+      display: inline-block;
+      width: calc(100% - 155px);
+      text-align: right;
+    }
+    .main-nav__items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .main-nav__item {
+      display: inline-block;
+      margin: 0px 5px;
+    }
+    .main-header__logo {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 32px;
+    }
+    .main-nav__item a {
+      color: white;
+      text-decoration: none;
+    }
+    .main-nav__item a:hover {
+      color: red;
+    }
+    .main-nav__item::before {
+      color: #fff;
+    }
+    .main-nav__item:hover::before {
+      color: red;
+    }
+    .main-nav__item--login a {
+      color: black;
+      background-color: #ffffff;
+      padding: 4px 16px;
+      border-radius: 8px;
+      border: 2px solid black;
+    }
+    .main-nav__item--login {
+      color:white;
+      text-align: left;
+    }
+    .main-nav__item--login a:hover {
+      color: #2e4c6d;
+      border: 2px solid #2e4c6d;
+      background-color: #fff;
+    }
+    .row {
+      margin-bottom: 50px;
+    }
+    .col {
+      display: inline-block;
+      width: 30%;
+      padding: 12px;
+    }
+    #how-it-works h2 {
+      color: brown;
+      font-size: 28px;
+    }
+    .icon-box h3 {
+      color: brown;
+      font-size: 22px;
+    }
+    .icon-box i {
+      color: #3fa796;
+    }
+    .col-2 {
+      background-color: #aef3e7;
+      display: inline-block;
+      width: calc(50% - 2px);
+      height: 350px;
+      vertical-align: middle;
+    }
+    .left {
+      background-image: url("features.jpeg");
+      background-size: cover;
+    }
+    .right {
+      padding: 25px 45px;
+
+    }
+    .right a {
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 7px;
+      background-color: rgb(251, 133, 6);
+      color: black;
+      text-align: center;
+      border: 1px solid rgb(251, 133, 6);
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .right h3 {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .right a:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Filmler</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Diziler</a>
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <a href="#">Giriş Yap</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="showcase">
+        <h1 class="h1">Welcome to MovieApp</h1>
+      </div>
+      <div id="how-it-works">
+        <div class="row">
+          <h2>How It Works ?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            voluptate animi nobis aut doloribus autem magni placeat soluta quas
+            quia officia quaerat nam vel assumenda atque commodi perspiciatis,
+            esse fugiat.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore voluptate animi nobis aut doloribus autem magni placeat
+            soluta quas quia officia quaerat nam vel assumenda atque commodi
+            perspiciatis, esse fugiat.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore voluptate animi nobis aut doloribus
+            autem magni placeat soluta quas quia officia quaerat nam vel
+            assumenda atque commodi perspiciatis, esse fugiat.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col icon-box">
+            <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              soluta nesciunt illum.quaerat nam vel assumenda atque commodi
+              perspiciatis.
+            </p>
+          </div>
+          <div class="col icon-box">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              soluta nesciunt illum.quaerat nam vel assumenda atque commodi
+              perspiciatis.
+            </p>
+          </div>
+          <div class="col icon-box">
+            <i class="fa-solid fa-comment-dots fa-3x"></i>
+            <h3>Contact us</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              soluta nesciunt illum.quaerat nam vel assumenda atque commodi
+              perspiciatis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2 left"></div><div class="col-2 right">
+          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing ?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            praesentium maxime laboriosam repellat totam, quas alias unde dolor
+            molestias. Odio, non? Ipsa quam deserunt voluptatem totam vero
+            eligendi delectus repudiandae.
+          </p>
+          <a href="#">View Features</a>
+        </div>
+      </div>
+
+      
+    </main>
+  </body>
+</html>
