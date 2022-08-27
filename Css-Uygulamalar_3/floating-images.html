@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        border: 2px solid red;
+        padding: 5px;
+    }
+    img {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+    }
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+</style>
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur fuga corrupti quas deserunt nesciunt ad, labore eum at ipsam, debitis pariatur quidem sequi laborum, animi voluptate laboriosam quo quam!
+    </p>
+    <p class="clearfix">
+        <img src="images/art.jpg" alt="">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vel molestiae similique, consequatur velit cumque! Natus possimus sapiente nihil cupiditate aliquam ducimus autem, molestiae adipisci aut officiis numquam, iure tempore?
+        </span>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vel molestiae similique, consequatur velit cumque! Natus possimus sapiente nihil cupiditate aliquam ducimus autem, molestiae adipisci aut officiis numquam, iure tempore?
+        </span>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vel molestiae similique, consequatur velit cumque! Natus possimus sapiente nihil cupiditate aliquam ducimus autem, molestiae adipisci aut officiis numquam, iure tempore?
+        </span>
+    </p>
+    
+</body>
+</html>

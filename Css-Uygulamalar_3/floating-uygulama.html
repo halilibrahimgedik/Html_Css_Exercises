@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+header,footer {
+    background-color:#6FEDD6;
+    color:#FF9551;
+    padding: 15px;
+}
+h1 {
+    margin: 0px;
+}
+
+.col {
+    float: left;
+    padding: 15px 15px 15px 0px;
+}
+.col li:hover {
+    background-color: #FF9551;
+    cursor: pointer;
+}
+
+.menu {
+    width: 25%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #FF4A4A;
+}
+
+.content {
+    width: 75%;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+</style>
+<body>
+
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <main class="clearfix">
+        <div class="menu col">
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>javascript</li>
+            </ul>
+        </div>
+        <div class="content col">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, vel unde officiis quia saepe consectetur explicabo atque, hic a aliquid porro voluptate maxime sint laboriosam nulla eius, autem minus beatae.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed soluta consequuntur consectetur aliquam eius suscipit, quisquam corrupti voluptatum maiores nostrum possimus itaque quaerat! Minus iure ex earum rerum molestiae!</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
+    
+</body>
+</html>
