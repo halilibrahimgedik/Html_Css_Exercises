@@ -1,0 +1,40 @@
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition-duration: .4s;
+
+}
+
+.btn-primary {
+    margin-top: 10px;
+    background-color: #f63900;
+    color: #fff;
+    border: 2px solid #f63900;
+   
+}
+
+.btn-secondary {
+    background-color: aquamarine;
+    color: black!important;
+    border: 2px solid aquamarine;
+
+}
+
+.btn-primary:hover {
+    background-color: #f63900;
+    color: black;
+    border: 2px solid #f63900;
+
+}
+
+.btn-secondary:hover {
+    background-color: rgb(2, 194, 114);
+    color: black;
+    border: 2px solid rgb(2, 194, 114);
+}
