@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        @media (min-width:576px) and (max-width:767) 
+        {
+            body {
+                background-color:aqua;
+            }   
+            #phone h1 {
+                display: block;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991)
+        {
+            body {
+                background-color:olive;
+            } 
+            #tablets h1 {
+                display: block;
+            }  
+        }
+
+        @media (min-width:992px) and (max-width:1199)
+        {
+            body {
+                background-color:rgb(235, 83, 12);
+            } 
+            #desktop h1 {
+                display: block;
+            }  
+        }
+
+        @media (min-width:1200px) and (max-width:1399)
+        {
+            body {
+                background-color:rgb(41, 92, 231);
+            }   
+            #large h1 {
+                display: block;
+            }
+        }
+
+        @media (min-width:1400px)
+        {
+            body {
+                background-color:pink;
+            }   
+            #xlarge h1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="phone"><h1>Phone</h1></div>
+    <div id="tablets"><h1>landscape</h1></div>
+    <div id="desktop"><h1>desktop</h1></div>
+    <div id="large"><h1>large</h1></div>
+    <div id="xlarge"><h1>xlarge</h1></div>
+    
+</body>
+</html>

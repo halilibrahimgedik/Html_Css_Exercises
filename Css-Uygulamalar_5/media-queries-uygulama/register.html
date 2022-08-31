@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body id="body"> 
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="main-header__logo">MovieApp</a>
+            <nav class="main-nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="#">Filmler</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Diziler</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--login">
+                        <a class="btn btn-secondary" href="#">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main class="signup-page">
+
+
+        <h1 class="signup-title">Create your account</h1>
+        <form action="" class="signup-form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname">
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <label for="mail">Mail</label>
+            <input type="email" id="mail">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option value="">Erkek</option>
+                <option value="">Kadın</option>
+            </select>
+            <input type="checkbox" id="agree-terms">
+            <label for="agree-terms">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="btn btn-primary">
+                Sign Up
+            </button>
+        </form>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <ul class="footer-links">
+                            <li class="link-item"><a href="#">About</a></li>
+                            <li class="link-item"><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="social-link">
+                            <li><a href="" class="fab fa-facebook"></a></li>
+                            <li><a href="" class="fab fa-twitter"></a></li>
+                            <li><a href="" class="fab fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <a href="#body" id="backtotop">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+</body>
+</html>
