@@ -1,0 +1,82 @@
+/* @import url("https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E94560;
+    padding: 0 20px;
+}
+
+nav a {
+    align-self: center;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navigation a {
+    display: block;
+    padding: 12px;
+}
+
+.navigation a:hover {
+    border-radius: 5px;
+    background-color: antiquewhite;
+    color:#0F3460;
+}
+
+.navigation li:last-child {
+    display: none;
+}
+
+
+
+@media (max-width:600px){
+    nav{
+        position: relative;
+        flex-direction: column;
+    }
+    nav a {
+        align-self: flex-start;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px 0;
+        /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 10px;   
+    }
+
+    .responsive .navigation li:not(:last-child) {
+        display: none;
+    }
+
+    .navigation li:last-child a {
+        border:none
+    }
+    .navigation li:last-child a:hover {
+        background-color: #E94560;
+    }
+}
