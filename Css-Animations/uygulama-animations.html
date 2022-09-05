@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+            cursor:pointer;
+        }
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color:#fff;
+        }
+        h1{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+        .flex h1{
+            font-size: 5rem;
+            margin: 2rem;
+        }
+        .flex p {
+            font-size: 1.5rem;
+        }
+        .btn{
+            display: inline-block;
+            color:black;
+            font-size: 1.2rem;
+            background-color: #fff;
+            border-radius: 0.4rem;
+            padding: 1rem 2rem;
+
+            transition: all .3s ease-in;
+        }
+        .btn:hover{
+            background-color:#333 ;
+            color:white
+        }
+
+        #page-1{background-color: #313552;}
+        #page-2{background-color: #b8405e;}
+        #page-3{background-color: #2eb086;}
+
+        #page-1 h1{
+            transform: translateY(-800px);
+            animation: page-1-h1 1s forwards ease-in;
+        }
+        #page-1 p{
+            transform: translateX(-2000px);
+            animation: page-1-p 1s forwards ease-in-out;
+        }
+        @keyframes page-1-h1{
+            to{
+                transform: translateY(0);
+            }
+        }
+        @keyframes page-1-p{
+            to{
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="page-1" class="flex">
+        <h1>Page 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta fugiat nemo similique quis repellendus, blanditiis quibusdam excepturi omnis nisi quod eos ab iure ipsa neque quisquam sunt sequi quia vel.</p>
+        <div>
+            <a href="#page-2" class="btn">Next Page</a>
+        </div>
+    </section>
+
+    <section id="page-2" class="flex">
+        <h1>Page 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta fugiat nemo similique quis repellendus,
+            blanditiis quibusdam excepturi omnis nisi quod eos ab iure ipsa neque quisquam sunt sequi quia vel.</p>
+        <div>
+            <a href="#page-1" class="btn">Previous Page</a>
+            <a href="#page-3" class="btn">Next Page</a>
+        </div>
+    </section>
+
+    <section id="page-3" class="flex">
+        <h1>Page 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta fugiat nemo similique quis repellendus,
+            blanditiis quibusdam excepturi omnis nisi quod eos ab iure ipsa neque quisquam sunt sequi quia vel.</p>
+        <div>
+            <a href="#page-2" class="btn">Previous Page</a>
+        </div>
+    </section>
+    
+</body>
+</html>
