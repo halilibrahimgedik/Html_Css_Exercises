@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+
+            /* grid-template-columns: 150px 250px 400px 150px; */
+            /* grid-template-columns: 150px auto 200px auto; */
+            /* grid-template-columns: auto auto 20%; */
+            /* grid-template-columns: repeat(3,150px) 20%; */
+            /* grid-template-columns: repeat(4,200px); */
+
+            /* grid-template-columns: 150px 150px 1fr 3fr;
+            grid-template-rows: repeat(4,150px); */
+
+            grid-template-columns: 150px 150px 1fr;
+            grid-template-rows: 200px 400px;
+
+            background-color: #6e57e0;
+
+            padding: 20px;
+        }
+
+        .item {
+            background-color:  #f7786b;
+            padding: 20px;
+            margin: 20px;
+            color:white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+
+    
+</body>
+</html>

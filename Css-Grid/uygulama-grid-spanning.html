@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html { 
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .header {
+            grid-column: 1 / span 3 ;
+            text-align: center;
+            background-color: bisque;
+        }
+        .content {
+            grid-column: 2 / span 3;
+        }
+        .sidebar {
+            text-align: left;
+            grid-column: 1 /span 1;
+            grid-row: 2 / span 4;
+        }
+        .box-1 {
+            grid-column: 2 / span 3;
+            margin: 30px;
+        }
+        .box-3,.box-2 {
+            grid-column: 2 / span 2;
+            padding: 10px 30px 0;
+        }
+        .footer {
+            grid-column: 1 /span 3;
+            text-align:  center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Page Header</h2>
+        </header>
+
+        <section class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam delectus sunt voluptatibus, doloribus neque unde vel vero earum magnam sint deleniti non placeat asperiores facilis minus repudiandae voluptatum. Nemo, amet.</p>
+        </section>
+
+        <section class="sidebar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <div class="box-1">
+            BOX_1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+        <div class="box-2">
+            BOX_2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim
+            nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+        <div class="box-3">
+            BOX_3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim
+            nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>

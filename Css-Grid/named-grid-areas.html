@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html { 
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "h1 h1 h1"
+                                "sidebar content content"
+                                "sidebar . ."
+                                "box-1 box-1 box-1"
+                                "footer footer footer"
+                                
+        }
+        .header {
+            grid-area: h1;
+            background-color: rgb(199, 91, 91);
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: aquamarine;
+        }
+        .content {
+            grid-area: content;
+            background-color: bisque;
+        }
+        .box-1 {
+            grid-area: box-1;
+            background-color: antiquewhite;
+        }
+        /* .box-2 {
+            
+        }
+        .box-3 {
+            
+        } */
+        .footer {
+            grid-area: footer;
+            background-color: #6757e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Page Header</h2>
+        </header>
+
+        <section class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam delectus sunt voluptatibus, doloribus neque unde vel vero earum magnam sint deleniti non placeat asperiores facilis minus repudiandae voluptatum. Nemo, amet.</p>
+        </section>
+
+        <section class="sidebar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <div class="box-1">
+            <H2>BOX-1</H2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+        <div class="box-2">
+            <H2>BOX-2</H2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim
+            nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+        <div class="box-3">
+            <H2>BOX-3</H2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim
+            nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+        <div class="box-4">
+            <H2>BOX-4</H2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quidem facere nisi repellendus rem labore tenetur enim
+            nobis quas, eligendi cupiditate alias earum cum pariatur iste maxime consequuntur illo hic!
+        </div>
+
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
