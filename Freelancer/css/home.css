@@ -1,0 +1,58 @@
+.home__a .skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.profile {
+    padding: 2.5rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cards div {
+    padding: 3rem 0rem;
+    text-align: center;
+}
+
+.home__c .process {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.home__c .process .process__step {
+    font-size: 25px;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    line-height: 15px;
+    background-color:var(--primary-color);
+    transition: all 1s;
+}
+.home__c .process .process__icon{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* .home__c .process .process__step:hover{
+    background-color: var(--dark-color);
+} */
+.home__c .process .process__icon:hover {
+    background-color: var(--primary-color);
+
+}
+.home__c .process .process__icon:hover .process__step{
+    background-color: var(--dark-color);
+}

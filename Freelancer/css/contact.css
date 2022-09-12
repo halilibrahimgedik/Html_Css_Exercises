@@ -1,0 +1,55 @@
+
+#contact .form-fields {
+    display: grid;
+    grid-template-areas: 
+            'name email'
+            'subject tel'
+            'message message'
+            'button button';
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact .name{
+    grid-area: name;
+}
+
+#contact .email{
+    grid-area: email;
+}
+
+#contact .subject {
+    grid-area: subject;
+}
+
+#contact .tel {
+    grid-area: tel;
+}
+
+#contact .message {
+    grid-area: message;
+    height: 150px;
+    width: 100%;
+    padding: 1rem;
+}
+#contact .form-fields button {
+    grid-area: button;
+}
+
+* #contact-b p{
+    font-weight: 500;
+}
+#contact .form-fields input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0.5px solid;
+
+}
+
+
+#contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+}

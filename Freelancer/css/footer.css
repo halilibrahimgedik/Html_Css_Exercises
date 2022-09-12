@@ -1,0 +1,29 @@
+.main-footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    height: 5rem;
+}
+.contact-footer{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 5rem;
+}
+.main-footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-content .social .fab {
+    margin-right: 1rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5rem;
+
+    transition: all 1s;
+}
+.footer-content .social .fab:hover{
+    background-color: var(--primary-color);
+}

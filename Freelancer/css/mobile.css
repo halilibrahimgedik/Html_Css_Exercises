@@ -1,0 +1,127 @@
+/* tablets and smaller */
+@media(max-width:768px){
+    #header__home {
+        height: 30rem;
+        
+    }
+    #header__home .header-content {
+    padding-top: 7rem;
+    }
+    #header__home h1 {
+    font-size: 2.6rem;
+    }
+    #header__home .btn{
+        margin-top: 0.5rem;
+    }
+    .home__a .skills,
+    .home__b .cards,
+    .home__v .process {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .items {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-nav__items li{
+        padding: 1rem 0.5rem;
+    }
+
+
+     .about-a .info{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-c .about-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    #contact .form-fields {
+        grid-template-areas: 
+                    "name"
+                    "email"
+                    "subject"
+                    "tel"
+                    "message"
+                    "button";
+    }
+    #contact-b .contact-info{
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem 0rem; 
+    }
+}
+
+
+
+@media(max-width:615px) {
+    #header__home {
+        height: 20rem;
+        border-bottom: 2px solid var(--primary-color);
+        background-position: 55% 20%;
+    }
+
+    #header__home .header-content {
+        display: none;
+    }
+    #header__home .main-nav li {
+        padding: 0.4rem;
+    }
+    #header__inner{
+        height: 18rem;
+        background-position: 50% 30%;
+    }
+    #header__inner .main-nav{
+        flex-direction: column;
+    }
+    #header__inner .main-nav li{
+        padding: 0.3rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav__items {
+        flex-direction: column;
+    }
+    .main-nav__items li{
+        padding: 1rem 0.5rem;
+    }
+
+    .home__a .skills,
+    .home__b .cards,
+    .home__c .process {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .items {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .about-a .info{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-c .about-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .main-footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.3rem;
+    }
+
+}
