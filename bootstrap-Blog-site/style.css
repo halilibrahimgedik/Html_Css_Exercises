@@ -1,0 +1,39 @@
+.navbar {
+    background: #085E7D !important;
+}
+.bg-ozel{
+    background: #085E7D !important;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+.dg{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+}
+.dg li a{
+    color: white;
+}
+#map {
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 32vh;
+    }
+    #map{
+        height: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .card-img-top {
+        height: 25vh;
+    }
+}
